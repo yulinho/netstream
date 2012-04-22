@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MainActivity!</string>
     <string name="app_name">NetStream</string>
+    
+    <string name="laoding_text">正在加载...</string>
+    <string name="no_data">没有数据</string>
+    <string name="load_error">加载失败，请点击重试</string>
+    <string name="no_software_to_play">没有找到可以播放此视频的软件</string>
 </resources>
