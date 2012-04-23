@@ -147,6 +147,7 @@ public class MainActivity extends ActivityBase implements RequestListener {
     }
     
     private void readXMLFromInternet(String urlStr,RequestListener listener) {
+    	boolean isContinue = true;
     	List<ShowInfo> list = new ArrayList<ShowInfo>();
     	URL urlPath = null;
 		try {
@@ -154,6 +155,7 @@ public class MainActivity extends ActivityBase implements RequestListener {
 		} catch (MalformedURLException e1) {
 			listener.OnGetDataException(e1);
 			e1.printStackTrace();
+			isContinue = false;
 		}
     	
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -164,6 +166,7 @@ public class MainActivity extends ActivityBase implements RequestListener {
 		} catch (ParserConfigurationException e) {
 			listener.OnGetDataException(e);
 			e.printStackTrace();
+			isContinue = false;
 		}
 		Document doc = null;
 		
@@ -171,29 +174,37 @@ public class MainActivity extends ActivityBase implements RequestListener {
 			doc = db.parse(new InputSource(urlPath.openStream()));
 		} catch (SAXException e) {
 			e.printStackTrace();
+			isContinue = false;
 			listener.OnGetDataException(e);
 		} catch (IOException e) {
 			listener.OnGetDataException(e);
 			e.printStackTrace();
+			isContinue = false;
 		}
-		// 下面是解析XML的全过程
-		Element root = (Element) doc.getDocumentElement();//取根节点
 		
-		//取item
-		NodeList itemList = root.getElementsByTagName("item");
-		
-		for(int i = 0 ; i < itemList.getLength(); i++){
-			ShowInfo info = new ShowInfo();
-			Element item = (Element) itemList.item(i);
+		if(isContinue) {
+			// 下面是解析XML的全过程
+			Element root = (Element) doc.getDocumentElement();//取根节点
 			
-			String title = item.getElementsByTagName("title").item(0).getFirstChild().getNodeValue();
-			info.setTitle(title);
+			//取item
+			NodeList itemList = root.getElementsByTagName("item");
 			
-			String url = item.getElementsByTagName("url").item(0).getFirstChild().getNodeValue();
-			info.setUrl(url);
-			list.add(info);
+			for(int i = 0 ; i < itemList.getLength(); i++){
+				ShowInfo info = new ShowInfo();
+				Element item = (Element) itemList.item(i);
+				
+				String title = item.getElementsByTagName("title").item(0).getFirstChild().getNodeValue();
+				info.setTitle(title);
+				
+				String url = item.getElementsByTagName("url").item(0).getFirstChild().getNodeValue();
+				info.setUrl(url);
+				list.add(info);
+			}
+			listener.OnGetDataComplete(list);
 		}
-		listener.OnGetDataComplete(list);
+		
+		
+		
     }
     
 	private void getXmlFromInternetWithFile(final String urlStr,final RequestListener listener) {
@@ -334,12 +345,20 @@ public class MainActivity extends ActivityBase implements RequestListener {
 
 	@Override
 	public void OnGetDataException(Exception e) {
-		if(mLayoutLoading != null) {
-			mLayoutLoading.setVisibility(View.VISIBLE);
-			mPgbLoading.setVisibility(View.GONE);
-			mTvLoading.setText(getString(R.string.load_error));
-			mIvLoadAgain.setVisibility(View.VISIBLE);
-		}
+		runOnUiThread(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				if(mLayoutLoading != null) {
+					mLayoutLoading.setVisibility(View.VISIBLE);
+					mPgbLoading.setVisibility(View.GONE);
+					mTvLoading.setText(getString(R.string.load_error));
+					mIvLoadAgain.setVisibility(View.VISIBLE);
+				}
+			}
+		});
+		
 	}
     
 }
