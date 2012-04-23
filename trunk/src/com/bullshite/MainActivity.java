@@ -3,6 +3,8 @@ package com.bullshite;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -70,29 +72,72 @@ public class MainActivity extends ActivityBase implements RequestListener {
     }
     
     private void initial() {
-    	if(isHasSDCard()) {//SD卡存在
-    		
-    		if(isFileExisted(FILE_PATH)) {
-    			isPauseLocal = true;
-    			isNeedUpdateList = false;
-    			((ShowAdapter)mListAdapter).setList(readXMLFromFile(FILE_PATH));
-    			getXmlFromInternetWithFile(LIST_PATH, this);
-    		} else {
-    			isPauseLocal = true;
-    			isNeedUpdateList = true;
-    			getXmlFromInternetWithFile(LIST_PATH, this);
-    		}
-    		
-    	} else {//SD卡不存在,直接从网络读取
-    		isPauseLocal = false;
-    		new Thread(new Runnable() {
-				
-				@Override
-				public void run() {
-					readXMLFromInternet(LIST_PATH,MainActivity.this);
-				}
-			}).start();
-    		
+    	isPauseLocal = false;
+    	new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				readXMLFromInternet(LIST_PATH,MainActivity.this);
+			}
+		}).start();
+//    	if(isHasSDCard()) {//SD卡存在
+//    		
+//    		if(isFileExisted(FILE_PATH)) {
+//    			isPauseLocal = true;
+//    			if(!isFileEmpty(FILE_PATH)) {
+//    				isNeedUpdateList = false;
+//        			((ShowAdapter)mListAdapter).setList(readXMLFromFile(FILE_PATH));
+//    			} else {
+//    				isNeedUpdateList = true;
+//    				getXmlFromInternetWithFile(LIST_PATH, this);
+//    			}
+//    			
+//    			
+//    		} else {
+//    			isPauseLocal = true;
+//    			isNeedUpdateList = true;
+//    			getXmlFromInternetWithFile(LIST_PATH, this);
+//    		}
+//    		
+//    	} else {//SD卡不存在,直接从网络读取
+//    		isPauseLocal = false;
+//    		new Thread(new Runnable() {
+//				
+//				@Override
+//				public void run() {
+//					readXMLFromInternet(LIST_PATH,MainActivity.this);
+//				}
+//			}).start();
+//    		
+//    	}
+    }
+    
+    private boolean isFileEmpty(String path) {
+    	File file = new File(path);
+    	FileReader fr = null;
+    	BufferedReader br = null;
+    	
+    	try {
+			fr = new FileReader(file);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	br = new BufferedReader(fr);
+    	
+    	String firstLine = null;
+		try {
+			firstLine = br.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	if(firstLine == null || firstLine.equals("")) {
+    		return true;
+    	} else {
+    		return false;
     	}
     }
     
