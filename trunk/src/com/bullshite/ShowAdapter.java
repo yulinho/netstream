@@ -33,19 +33,16 @@ public class ShowAdapter extends BaseAdapter implements OnItemClickListener {
 
 	@Override
 	public Object getItem(int position) {
-		// TODO Auto-generated method stub
 		return (mList == null) ? null : mList.get(position);
 	}
 
 	@Override
 	public long getItemId(int position) {
-		// TODO Auto-generated method stub
 		return position;
 	}
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
 		Holder holder = null;
 		if(convertView == null) {
 			convertView = mInflater.inflate(R.layout.list_item, null);
@@ -73,15 +70,13 @@ public class ShowAdapter extends BaseAdapter implements OnItemClickListener {
 
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-		// TODO Auto-generated method stub
 		try{
 			Intent intent = new Intent(Intent.ACTION_VIEW);
 			Uri uri = Uri.parse(mList.get(position).getUrl());
 			intent.setDataAndType(uri, "audio");
 			mContext.startActivity(intent);
 		} catch (ActivityNotFoundException e) {
-			// TODO: handle exception
-			Toast.makeText(mContext, "没有找到可以播放此视频的软件", Toast.LENGTH_SHORT).show();
+			Toast.makeText(mContext, mContext.getString(R.string.no_software_to_play), Toast.LENGTH_SHORT).show();
 		}
 		
 	}

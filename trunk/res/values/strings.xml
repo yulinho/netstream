@@ -6,4 +6,6 @@
     <string name="no_data">没有数据</string>
     <string name="load_error">加载失败，请点击重试</string>
     <string name="no_software_to_play">没有找到可以播放此视频的软件</string>
+    
+    <string name="list_path">http://netstream.googlecode.com/svn/trunk/list/list.xml</string>
 </resources>
