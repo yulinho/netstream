@@ -132,40 +132,8 @@
 		<url>http://116.213.146.101:554/live.soooner.com/47</url>
 	</item>
 	<item>
-		<title>sex</title>
+		<title>cctv15</title>
 		<url>rtsp://bupt01.video.edu.cn/CCTV-music</url>
-	</item>
-	<item>
-		<title>pornotv</title>
-		<url>mms://live210.impek.com/pornotv</url>
-	</item>
-	<item>
-		<title>barthmania</title>
-		<url>mms://live210.impek.com/barthmania</url>
-	</item>
-	<item>
-		<title>nova_live_q3</title>
-		<url>mms://87.120.130.35/nova_live_q3.wmv</url>
-	</item>
-	<item>
-		<title>ios/live</title>
-		<url>rtsp://46.10.150.44:80/ios/live</url>
-	</item>
-	<item>
-		<title>playboy</title>
-		<url>mms://67.159.30.86/playboy</url>
-	</item>
-	<item>
-		<title>nrj_tv12</title>
-		<url>rtsp://vipnrj.yacast.net/nrj_tv12</url>
-	</item>
-	<item>
-		<title>onlineBTVCINEMA-HQ</title>
-		<url>mms://video.djtacho.com/onlineBTVCINEMA-HQ</url>
-	</item>
-	<item>
-		<title>onlinebtv</title>
-		<url>rtsp://67.159.54.219/onlinebtv</url>
 	</item>
 </list>
 
