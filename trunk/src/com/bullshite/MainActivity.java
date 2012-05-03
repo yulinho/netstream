@@ -17,6 +17,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,6 +38,8 @@ public class MainActivity extends Activity implements RequestListener {
 	
 	private ListView mListView = null;
 	private BaseAdapter mListAdapter = null;
+	
+	private GetDataTask mCurTask = null;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,13 +62,8 @@ public class MainActivity extends Activity implements RequestListener {
     }
     
     private void initial() {
-    	new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-				readXMLFromInternet(mListPath,MainActivity.this);
-			}
-		}).start();
+    	mCurTask = new GetDataTask(mListPath, MainActivity.this);
+    	mCurTask.execute();
     }  
     
     private OnClickListener mLoadAgainListener = new OnClickListener() {
@@ -76,63 +74,7 @@ public class MainActivity extends Activity implements RequestListener {
 			initial();
 		}
 	};
-    
-    private void readXMLFromInternet(String urlStr,RequestListener listener) {
-    	boolean isContinue = true;
-    	List<ShowInfo> list = new ArrayList<ShowInfo>();
-    	URL urlPath = null;
-		try {
-			urlPath = new URL(urlStr);
-		} catch (MalformedURLException e1) {
-			listener.OnGetDataException(e1);
-			e1.printStackTrace();
-			isContinue = false;
-		}
-    	
-		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-		DocumentBuilder db = null;
-		
-		try {
-			db = dbf.newDocumentBuilder();
-		} catch (ParserConfigurationException e) {
-			listener.OnGetDataException(e);
-			e.printStackTrace();
-			isContinue = false;
-		}
-		Document doc = null;
-		
-		try {
-			doc = db.parse(new InputSource(urlPath.openStream()));
-		} catch (SAXException e) {
-			e.printStackTrace();
-			isContinue = false;
-			listener.OnGetDataException(e);
-		} catch (IOException e) {
-			listener.OnGetDataException(e);
-			e.printStackTrace();
-			isContinue = false;
-		}
-		
-		if(isContinue) {
-			Element root = (Element) doc.getDocumentElement();
-			
-			NodeList itemList = root.getElementsByTagName("item");
-			
-			for(int i = 0 ; i < itemList.getLength(); i++){
-				ShowInfo info = new ShowInfo();
-				Element item = (Element) itemList.item(i);
-				
-				String title = item.getElementsByTagName("title").item(0).getFirstChild().getNodeValue();
-				info.setTitle(title);
-				
-				String url = item.getElementsByTagName("url").item(0).getFirstChild().getNodeValue();
-				info.setUrl(url);
-				list.add(info);
-			}
-			listener.OnGetDataComplete(list);
-		}
-    }
-
+	
 	@Override
 	public void OnGetDataBegin() {
 		if(mLayoutLoading != null) {
@@ -178,6 +120,102 @@ public class MainActivity extends Activity implements RequestListener {
 			}
 		});
 		
+	}
+	
+	private class GetDataTask extends AsyncTask<Void, Void, List<ShowInfo>> implements InterruptTask {
+		private String mUrl = null;
+		private RequestListener mListener = null;
+		
+		public GetDataTask(String url, RequestListener listener) {
+			this.mUrl = url;
+			this.mListener = listener;
+		}
+
+		@Override
+		public void interrupt() {
+			// TODO Auto-generated method stub
+			cancel(true);
+		}
+
+		@Override
+		protected void onPreExecute() {
+			mListener.OnGetDataBegin();
+		}
+
+		@Override
+		protected List<ShowInfo> doInBackground(Void... params) {
+			boolean isContinue = true;
+	    	List<ShowInfo> list = new ArrayList<ShowInfo>();
+	    	URL urlPath = null;
+			try {
+				urlPath = new URL(mUrl);
+			} catch (MalformedURLException e1) {
+				mListener.OnGetDataException(e1);
+				e1.printStackTrace();
+				isContinue = false;
+			}
+	    	
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder db = null;
+			
+			try {
+				db = dbf.newDocumentBuilder();
+			} catch (ParserConfigurationException e) {
+				mListener.OnGetDataException(e);
+				e.printStackTrace();
+				isContinue = false;
+			}
+			Document doc = null;
+			
+			try {
+				doc = db.parse(new InputSource(urlPath.openStream()));
+			} catch (SAXException e) {
+				e.printStackTrace();
+				isContinue = false;
+				mListener.OnGetDataException(e);
+			} catch (IOException e) {
+				mListener.OnGetDataException(e);
+				e.printStackTrace();
+				isContinue = false;
+			}
+			
+			if(isContinue) {
+				Element root = (Element) doc.getDocumentElement();
+				
+				NodeList itemList = root.getElementsByTagName("item");
+				
+				for(int i = 0 ; i < itemList.getLength(); i++){
+					ShowInfo info = new ShowInfo();
+					Element item = (Element) itemList.item(i);
+					
+					String title = item.getElementsByTagName("title").item(0).getFirstChild().getNodeValue();
+					info.setTitle(title);
+					
+					String url = item.getElementsByTagName("url").item(0).getFirstChild().getNodeValue();
+					info.setUrl(url);
+					list.add(info);
+				}
+			}
+			return list;
+		}
+		
+		@Override
+		protected void onPostExecute(List<ShowInfo> result) {
+			mListener.OnGetDataComplete(result);
+		}
+	}
+
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		interruptTask();
+	}
+	
+	private void interruptTask() {
+		if(mCurTask != null) {
+			mCurTask.interrupt();
+		}
 	}
     
 }
