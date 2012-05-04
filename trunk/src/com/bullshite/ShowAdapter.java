@@ -71,9 +71,10 @@ public class ShowAdapter extends BaseAdapter implements OnItemClickListener {
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 		try{
-			Intent intent = new Intent(Intent.ACTION_VIEW);
 			Uri uri = Uri.parse(mList.get(position).getUrl());
-			intent.setDataAndType(uri, "audio");
+			Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+			intent.setType("video/*");
+			intent.setDataAndType(uri, "video/*");
 			mContext.startActivity(intent);
 		} catch (ActivityNotFoundException e) {
 			Toast.makeText(mContext, mContext.getString(R.string.no_software_to_play), Toast.LENGTH_SHORT).show();
