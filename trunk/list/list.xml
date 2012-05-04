@@ -168,6 +168,10 @@
 		<url>mms://211.138.120.114/cctv8</url>
 	</item>
 	<item>
+		<title>CCTV-8（联通）</title>
+		<url>http://116.213.146.71:554/20</url>
+	</item>
+	<item>
 		<title>CCTV-News</title>
 		<url>mms://211.138.120.114/cctv9</url>
 	</item>
@@ -192,6 +196,10 @@
 		<url>http://gslb.tv.sohu.com/live?cid=1</url>
 	</item>
 	<item>
+		<title>CCTV-13（联通）</title>
+		<url>http://116.213.146.71:554/10</url>
+	</item>	
+	<item>
 		<title>CCTV-14</title>
 		<url>rtsp://bupt01.video.edu.cn/CCTV-kid</url>
 	</item>
@@ -202,6 +210,30 @@
 	<item>
 		<title>风云足球</title>
 		<url>rtmp://livertmp.wasu.cn/live4/fyzq</url>
+	</item>
+	<item>
+		<title>风云足球（联通）</title>
+		<url>http://116.213.146.71:554/27</url>
+	</item>
+	<item>
+		<title>风云剧场（联通）</title>
+		<url>http://116.213.146.71:554/30</url>
+	</item>
+	<item>
+		<title>世界地理（联通）</title>
+		<url>http://116.213.146.71:554/31</url>
+	</item>
+	<item>
+		<title>发现之旅（联通）</title>
+		<url>http://116.213.146.71:554/17</url>
+	</item>
+	<item>
+		<title>央视文化精品（联通）</title>
+		<url>http://116.213.146.71:554/25</url>
+	</item>
+	<item>
+		<title>怀旧剧场（联通）</title>
+		<url>http://116.213.146.71:554/26</url>
 	</item>
 	<item>
 		<title>CCTV高清</title>
@@ -887,6 +919,11 @@
 		<title>星空体育</title>
 		<url>rtmp://livertmp1.wasu.cn/live3/stars</url>
 	</item>
+	<item>
+		<title>劲爆体育（联通）</title>
+		<url>http://116.213.146.71:554/19</url>
+	</item>
+
 </list>
 
 
