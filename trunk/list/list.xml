@@ -832,6 +832,14 @@
 		<url>http://wowmlive.shinbnstar.com:1935/live2/wowtv/playlist.m3u8</url>
 	</item>
 	<item>
+		<title>韩国电影台</title>
+		<url>http://223.27.170.210/channels/39/800.flv/live/400.flv/live</url>
+	</item>
+	<item>
+		<title>韩-阿里郎国际台</title>
+		<url>rtsp://121.156.66.57/woRld_lIvE/Md</url>
+	</item>
+	<item>
 		<title>日NHK高清</title>
 		<url>http://plslive-w.nhk.or.jp/nhkworld/app/high.m3u8</url>
 	</item>
@@ -840,12 +848,40 @@
 		<url>http://plslive-w.nhk.or.jp/nhkworld/app/mid.m3u8</url>
 	</item>
 	<item>
+		<title>日-娱乐台</title>
+		<url>rtsp://wms9live.pod.tv/odoroku</url>
+	</item>
+	<item>
 		<title>euronews</title>
 		<url>rtsp://media2.lsops.net/live/euronews_en_high.sdp</url>
 	</item>
 	<item>
 		<title>CNN</title>
 		<url>http://media4.lsops.net/live/_definst_/cnn_en_medium.sdp/playlist.m3u8</url>
+	</item>
+	<item>
+		<title>美-美国中文电视</title>
+		<url>rtmp://cdnrtmp.sinovision.net:1935/live/livestream</url>
+	</item>
+	<item>
+		<title>美-Discovery</title>
+		<url>rtmp://122.160.220.49/live/DISCOVERYCHANNEL_HVGA.sdp</url>
+	</item>
+	<item>
+		<title>美-探索科学台</title>
+		<url>rtmp://122.160.220.49/live/DISCOVERYSCIENCE_HVGA.sdp</url>
+	</item>
+	<item>
+		<title>美-NG历险频道</title>
+		<url>rtmp://204.45.157.130/live/_definst_/natgeo</url>
+	</item>
+	<item>
+		<title>美-动物星球</title>
+		<url>rtmp://122.160.220.49/live/ANIMALPLANET_HVGA.sdp</url>
+	</item>
+	<item>
+		<title>法-France24（英）</title>
+		<url>http://nasa-f.akamaihd.net/public_h264_200@54826</url>
 	</item>
 	<item>
 		<title>星空体育</title>
