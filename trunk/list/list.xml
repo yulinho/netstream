@@ -137,15 +137,15 @@
 	</item>
 	<item>
 		<title>CCTV-1</title>
-		<url>rtmp://live.cditv.cn/test/CCTV1</url>
+		<url>http://cdn.cditv.cn/380k/cctv1.flv</url>
 	</item>
 	<item>
 		<title>CCTV-2</title>
-		<url>mms://211.138.120.114/cctv2</url>
+		<url>mms://bupt02.video.edu.cn/CCTV-2</url>
 	</item>
 	<item>
 		<title>CCTV-3</title>
-		<url>mms://211.138.120.114/cctv3</url>
+		<url>rtsp://116.199.127.68/cctv3</url>
 	</item>
 	<item>
 		<title>CCTV-4</title>
@@ -153,11 +153,11 @@
 	</item>
 	<item>
 		<title>CCTV-5</title>
-		<url>rtmp://live.cditv.cn/test/CCTV5</url>
+		<url>http://cdn.cditv.cn/380k/cctv5.flv</url>
 	</item>
 	<item>
 		<title>CCTV-6</title>
-		<url>mms://211.138.120.114/cctv6</url>
+		<url>mms://bupt02.video.edu.cn/CCTV-6</url>
 	</item>
 	<item>
 		<title>CCTV-7</title>
@@ -165,7 +165,7 @@
 	</item>
 	<item>
 		<title>CCTV-8</title>
-		<url>mms://211.138.120.114/cctv8</url>
+		<url>mms://bupt02.video.edu.cn/CCTV-8</url>
 	</item>
 	<item>
 		<title>CCTV-8（联通）</title>
@@ -173,15 +173,15 @@
 	</item>
 	<item>
 		<title>CCTV-News</title>
-		<url>mms://211.138.120.114/cctv9</url>
+		<url>mms://bupt02.video.edu.cn/CCTV-9</url>
 	</item>
 	<item>
 		<title>CCTV-9</title>
-		<url>rtmp://live.cditv.cn/test/CCTV9</url>
+		<url>http://cdn.cditv.cn/380k/cctv9.flv</url>
 	</item>
 	<item>
 		<title>CCTV-10</title>
-		<url>mms://211.138.120.114/cctv10</url>
+		<url>rtsp://211.68.71.252/CCTV-10</url>
 	</item>
 	<item>
 		<title>CCTV-11</title>
@@ -189,7 +189,7 @@
 	</item>
 	<item>
 		<title>CCTV-12</title>
-		<url>mms://211.138.120.114/cctv12</url>
+		<url>rtsp://211.68.71.252/CCTV-12</url>
 	</item>
 	<item>
 		<title>CCTV-13</title>
