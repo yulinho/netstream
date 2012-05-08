@@ -1,9 +1,5 @@
 ﻿<list version="1">
 	<item>
-		<title>武汉新闻综合</title>
-		<url>rtmp://tsl2.cutv.com/cutvChannelLive/jfDyuzx/live</url>
-	</item>
-	<item>
 		<title>翡翠</title>
 		<url>rtsp://116.199.127.68/feicui</url>
 	</item>
@@ -272,7 +268,7 @@
 		<url>mms://222.240.196.154/wmlive</url>
 	</item>
 	<item>
-		<title>上海东方卫视"</title>
+		<title>上海东方卫视</title>
 		<url>http://gslb.tv.sohu.com/live?cid=3</url>
 	</item>
 	<item>
@@ -529,27 +525,39 @@
 	</item>
 	<item>
 		<title>浙江钱江</title>
-		<url>rtsp://211.138.120.114/ztv2</url>
+		<url>http://v2.cztv.com/channels/102/500.flv/live</url>
 	</item>
 	<item>
 		<title>浙江经视</title>
-		<url>rtsp://211.138.120.114/ztv3</url>
+		<url>http://v3.cztv.com/channels/103/500.flv/live</url>
 	</item>
 	<item>
 		<title>浙江科教</title>
-		<url>rtsp://211.138.120.114/ztv4</url>
+		<url>http://v4.cztv.com/channels/104/500.flv/live</url>
 	</item>
 	<item>
 		<title>浙江影视</title>
-		<url>rtsp://211.138.120.114/ztv5</url>
+		<url>http://v5.cztv.com/channels/105/500.flv/liv</url>
 	</item>
 	<item>
 		<title>浙江民生</title>
-		<url>rtsp://211.138.120.114/ztv6</url>
+		<url>http://v6.cztv.com/channels/106/500.flv/liv</url>
+	</item>
+	<item>
+		<title>浙江公共</title>
+		<url>http://v7.cztv.com/channels/107/500.flv/live</url>
 	</item>
 	<item>
 		<title>浙江少儿</title>
-		<url>rtsp://211.138.120.114/ztv8</url>
+		<url>http://v8.cztv.com/channels/108/500.flv/live</url>
+	</item>
+	<item>
+		<title>浙江国际</title>
+		<url>http://v10.cztv.com/channels/110/500.flv/live</url>
+	</item>
+	<item>
+		<title>留学世界</title>
+		<url>http://v9.cztv.com/channels/109/500.flv/live</url>
 	</item>
 	<item>
 		<title>安徽卫视</title>
@@ -725,7 +733,7 @@
 	</item>
 	<item>
 		<title>广东体育</title>
-		<url>rtmp://v1.gdtv.cn:1935/live/sports</url>
+		<url>rtsp://116.199.127.68/gdtv_sport</url>
 	</item>
 	<item>
 		<title>广州影视</title>
@@ -922,6 +930,26 @@
 	<item>
 		<title>劲爆体育（联通）</title>
 		<url>http://116.213.146.71:554/19</url>
+	</item>
+	<item>
+		<title>国外1</title>
+		<url>rtsp://live240.impek.com/idf1</url>
+	</item>
+	<item>
+		<title>国外2</title>
+		<url>rtsp://112.197.2.11:1935/live/vtv3.stream</url>
+	</item>
+	<item>
+		<title>国外3</title>
+		<url>rtsp://91.121.2.60/calaistv</url>
+	</item>
+	<item>
+		<title>国外4</title>
+		<url>rtsp://cdn.mivo.tv/mivotvjkt/transtv2</url>
+	</item>
+	<item>
+		<title>国外5-tuna2</title>
+		<url>rtsp://media2.kure.tv:1935/live/tuna2</url>
 	</item>
 
 </list>
