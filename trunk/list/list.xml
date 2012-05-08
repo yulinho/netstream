@@ -951,7 +951,30 @@
 		<title>国外5-tuna2</title>
 		<url>rtsp://media2.kure.tv:1935/live/tuna2</url>
 	</item>
-
+	<item>
+		<title> France TV-BFM</title>
+		<url>rtsp://vipmms9.yacast.net/bfm_bfmtv</url>
+	</item>
+	<item>
+		<title> France TV-CLAP</title>
+		<url>mms://rr93.diffusepro.com/rr93</url>
+	</item>
+	<item>
+		<title> France TV-TVSF</title>
+		<url>rtsp://stream.tvsf.fr/live</url>
+	</item>
+	<item>
+		<title> France TV-TELEANTILLES</title>
+		<url>rtsp://soleiltv.impek.tv/soleiltv</url>
+	</item>
+	<item>
+		<title> France TV-BIOSPHERE</title>
+		<url>mms://live240.impek.com/biosphere</url>
+	</item>
+	<item>
+		<title> France TV-Plaisance</title>
+		<url>rtsp://www.diffusepro.com/liveteleplaiz</url>
+	</item>
 </list>
 
 
