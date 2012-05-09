@@ -296,10 +296,6 @@
 		<url>http://live.64ma.com/livePlay.asp?imgoId=18</url>
 	</item>
 	<item>
-		<title>靓妆频道</title>
-		<url>http://live.64ma.com/livePlay.asp?imgoId=20</url>
-	</item>
-	<item>
 		<title>先锋乒羽</title>
 		<url>http://live.64ma.com/livePlay.asp?imgoId=21</url>
 	</item>
@@ -382,6 +378,10 @@
 	<item>
 		<title>炫动卡通</title>
 		<url>http://live-cdn.smgbb.tv/channels/224/400.flv/live</url>
+	</item>
+	<item>
+		<title>靓妆频道</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=20</url>
 	</item>
 	<item>
 		<title>劲爆体育</title>
@@ -514,6 +514,26 @@
 	<item>
 		<title>重庆卫视</title>
 		<url>http://gslb.tv.sohu.com/live?cid=35</url>
+	</item>
+	<item>
+		<title>重庆时尚</title>
+		<url>rtsp://123.147.168.27:554/shis</url>
+	</item>
+	<item>
+		<title>重庆少儿</title>
+		<url>rtsp://123.147.168.27:554/sepd</url>
+	</item>
+	<item>
+		<title>重庆新财经</title>
+		<url>rtsp://123.147.168.27:554/xcj</url>
+	</item>
+	<item>
+		<title>重庆移动电视</title>
+		<url>rtsp://123.147.168.27:554/scds</url>
+	</item>
+	<item>
+		<title>重庆影视</title>
+		<url>rtsp://123.147.168.27:554/yspd</url>
 	</item>
 	<item>
 		<title>武汉体育</title>
