@@ -236,6 +236,10 @@
 		<url>rtmp://202.108.17.104/live/test02</url>
 	</item>
 	<item>
+		<title>CCTV-高尔夫 网球</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=19</url>
+	</item>
+	<item>
 		<title>中国教育—1</title>
 		<url>http://gslb.tv.sohu.com/live?cid=30</url>
 	</item>
@@ -253,7 +257,55 @@
 	</item>
 	<item>
 		<title>金鹰卡通</title>
-		<url>rtmp://livertmp.wasu.cn/live7/jykt</url>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=15</url>
+	</item>
+	<item>
+		<title>湖南国际</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=8</url>
+	</item>
+	<item>
+		<title>湖南经视</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=9</url>
+	</item>
+	<item>
+		<title>湖南娱乐</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=10</url>
+	</item>
+	<item>
+		<title>湖南电视剧</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=11</url>
+	</item>
+	<item>
+		<title>湖南公共</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=12</url>
+	</item>
+	<item>
+		<title>金鹰纪实</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=13</url>
+	</item>
+	<item>
+		<title>湖南都市</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=14</url>
+	</item>
+	<item>
+		<title>快乐购</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=16</url>
+	</item>
+	<item>
+		<title>快乐垂钓</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=18</url>
+	</item>
+	<item>
+		<title>靓妆频道</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=20</url>
+	</item>
+	<item>
+		<title>先锋乒羽</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=21</url>
+	</item>
+	<item>
+		<title>先锋记录</title>
+		<url>http://live.64ma.com/livePlay.asp?imgoId=22</url>
 	</item>
 	<item>
 		<title>长沙新闻</title>
@@ -266,6 +318,14 @@
 	<item>
 		<title>长沙女性</title>
 		<url>mms://222.240.196.154/wmlive</url>
+	</item>
+	<item>
+		<title>长沙房产</title>
+		<url>rtmp://media.csjmpd.com/live/live1</url>
+	</item>
+	<item>
+		<title>长沙汽车</title>
+		<url>rtmp://media.csjmpd.com/live/live2</url>
 	</item>
 	<item>
 		<title>上海东方卫视</title>
@@ -952,29 +1012,33 @@
 		<url>rtsp://media2.kure.tv:1935/live/tuna2</url>
 	</item>
 	<item>
-		<title> France TV-BFM</title>
+		<title>France TV-BFM</title>
 		<url>rtsp://vipmms9.yacast.net/bfm_bfmtv</url>
 	</item>
 	<item>
-		<title> France TV-CLAP</title>
+		<title>France TV-CLAP</title>
 		<url>mms://rr93.diffusepro.com/rr93</url>
 	</item>
 	<item>
-		<title> France TV-TVSF</title>
+		<title>France TV-TVSF</title>
 		<url>rtsp://stream.tvsf.fr/live</url>
 	</item>
 	<item>
-		<title> France TV-TELEANTILLES</title>
+		<title>France TV-TELEANTILLES</title>
 		<url>rtsp://soleiltv.impek.tv/soleiltv</url>
 	</item>
 	<item>
-		<title> France TV-BIOSPHERE</title>
+		<title>France TV-BIOSPHERE</title>
 		<url>mms://live240.impek.com/biosphere</url>
 	</item>
 	<item>
-		<title> France TV-Plaisance</title>
+		<title>France TV-Plaisance</title>
 		<url>rtsp://www.diffusepro.com/liveteleplaiz</url>
 	</item>
+	<item>
+		<title>United States TV-LA36</title>
+		<url>rtsp://207.7.154.95/G0019_002</url>
+	</item>	
 </list>
 
 
