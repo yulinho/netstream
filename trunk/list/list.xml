@@ -484,6 +484,34 @@
 		<url>http://gslb.tv.sohu.com/live?cid=10</url>
 	</item>
 	<item>
+		<title>大连1</title>
+		<url>rtsp://live.dltv.cn/live1</url>
+	</item>
+	<item>
+		<title>大连2</title>
+		<url>rtsp://live.dltv.cn/live2</url>
+	</item>
+	<item>
+		<title>大连3</title>
+		<url>rtsp://live.dltv.cn/live3</url>
+	</item>
+	<item>
+		<title>大连4</title>
+		<url>rtsp://live.dltv.cn/live4</url>
+	</item>
+	<item>
+		<title>大连5</title>
+		<url>rtsp://live.dltv.cn/live5</url>
+	</item>
+	<item>
+		<title>大连6</title>
+		<url>rtsp://live.dltv.cn/live6</url>
+	</item>
+	<item>
+		<title>大连7</title>
+		<url>rtsp://live.dltv.cn/live7</url>
+	</item>
+	<item>
 		<title>山西卫视</title>
 		<url>http://gslb.tv.sohu.com/live?cid=50</url>
 	</item>
