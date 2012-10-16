@@ -62,35 +62,35 @@
   </item>
   <item>
     <title>CCTV-1</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv1</url>
+    <url>http://itv.hdpfans.com/live?vid=50661</url>
   </item>
   <item>
     <title>CCTV-2</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv2</url>
+    <url>http://itv.hdpfans.com/live?vid=50662</url>
   </item>
   <item>
     <title>CCTV-3</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv3</url>
+    <url>http://itv.hdpfans.com/live?vid=50663</url>
   </item>
   <item>
     <title>CCTV-4</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv4</url>
+    <url>http://itv.hdpfans.com/live?vid=50664</url>
   </item>
   <item>
     <title>CCTV-5</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv5</url>
+    <url>http://itv.hdpfans.com/live?vid=50667</url>
   </item>
   <item>
     <title>CCTV-6</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv6</url>
+    <url>http://itv.hdpfans.com/live?vid=50668</url>
   </item>
   <item>
     <title>CCTV-7</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv7</url>
+    <url>http://itv.hdpfans.com/live?vid=50669</url>
   </item>
   <item>
     <title>CCTV-8</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv8</url>
+    <url>rtsp://116.199.127.68/cctv8</url>
   </item>
   <item>
     <title>CCTV-News</title>
@@ -98,23 +98,27 @@
   </item>
   <item>
     <title>CCTV-9</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv9</url>
+    <url>http://itv.hdpfans.com/live?vid=50671</url>
+  </item>
+  <item>
+    <title>CCTV-9(英)</title>
+    <url>http://t.live.cntv.cn/m3u8/cctv9-doc.m3u8</url>
   </item>
   <item>
     <title>CCTV-10</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv10</url>
+    <url>http://itv.hdpfans.com/live?vid=50672</url>
   </item>
   <item>
     <title>CCTV-11</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv11</url>
+    <url>http://itv.hdpfans.com/live?vid=50673</url>
   </item>
   <item>
     <title>CCTV-12</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv12</url>
+    <url>http://itv.hdpfans.com/live?vid=50674</url>
   </item>
   <item>
     <title>CCTV-13</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv13</url>
+    <url>http://itv.hdpfans.com/live?vid=50675</url>
   </item>
   <item>
     <title>CCTV-14</title>
@@ -122,7 +126,7 @@
   </item>
   <item>
     <title>CCTV-15</title>
-    <url>http://live.64ma.com/livePlay.asp?uuId=cctv15</url>
+    <url>rtsp://221.12.170.8/cctvyy</url>
   </item>
   <item>
     <title>风云足球</title>
