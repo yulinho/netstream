@@ -1,0 +1,1 @@
+show the netstream adress to everyone who download this app and play the netstream on another media player which support to play it
